@@ -1,0 +1,7 @@
+alias gad='git add'
+alias gcl='git clone'
+alias gcm="git commit -m"
+alias gco='git checkout'
+
+alias gst='git status'
+alias gpu='git push'
