@@ -1,0 +1,13 @@
+#!/bin/ksh
+
+set -x
+
+#if [ -z "$2" ] ; then
+#  echo "usage: $0 <file>.tar.gz <dir>"
+#  exit
+#fi
+
+dir=$(echo $1 | sed -e 's/.gz$//' | sed -e 's/.tar$//' )
+
+mkdir -p $dir
+gunzip -c $1 | tar xvf - -C $dir
